@@ -8,7 +8,7 @@ async function newAnswer() {
     let first = parseInt(a.value);
     let second = parseInt(b.value);
     
-    const response = await fetch("http://localhost:3000/add/" + first + "/" + second);
+    const response = await fetch("https://arithmetic-service-68hv.onrender.com/add/" + first + "/" + second);
     const sum = await response.json();
     
     
