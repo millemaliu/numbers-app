@@ -69,5 +69,5 @@ async function isPrime() {
     const response = await fetch("https://primes-service-millemal.onrender.com/primes/" + to_test);
     const result = await response.json();
 
-    x.innerHTML = sum;
+    x.innerHTML = result;
 }
