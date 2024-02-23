@@ -64,9 +64,9 @@ async function multiply() {
 async function isPrime() {
     const b = document.getElementById("prime-in");
     const x = document.getElementById("prime-out");
-    let to_test = parseInt(a.value);
+    let to_test = parseInt(b.value);
 
-    const response = await fetch("https://primes-service-millemal.onrender.com/primes/" + n);
+    const response = await fetch("https://primes-service-millemal.onrender.com/primes/" + to_test);
     const result = await response.json();
 
     x.innerHTML = sum;
