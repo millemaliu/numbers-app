@@ -59,3 +59,15 @@ async function multiply() {
     
     x.innerHTML = sum;
 }
+
+
+async function isPrime() {
+    const b = document.getElementById("prime-in");
+    const x = document.getElementById("prime-out");
+    let to_test = parseInt(a.value);
+
+    const response = await fetch("https://primes-service-millemal.onrender.com/primes/" + n);
+    const result = await response.json();
+
+    x.innerHTML = sum;
+}
