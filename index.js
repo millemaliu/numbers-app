@@ -53,7 +53,6 @@ async function multiply() {
     let first = parseInt(a.value);
     let second = parseInt(b.value);
     
-    const response = await fetch("https://arithmetic-service-68hv.onrender.com/multiply/" + first + "/" + second);
     const sum = await response.json();
     
     
@@ -62,11 +61,10 @@ async function multiply() {
 
 
 async function isPrime() {
-    const b = document.getElementById("prime-in");
-    const x = document.getElementById("prime-out");
+    const b = document.getElementById("text");
     let to_test = parseInt(b.value);
 
-    const response = await fetch("https://primes-service-millemal.onrender.com/primes/" + to_test);
+    const response = await fetch("https://ciphers-service-latest-s4n3.onrender.com/ciphers/caesar/" + to_test + "/3");
     const result = await response.json();
 
     x.innerHTML = result;
